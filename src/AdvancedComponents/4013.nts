@@ -1,0 +1,30 @@
+.chipsets:
+output out_01
+output out_02
+clock cl_03
+input reset_04
+input data_05
+input set_06
+input in_07 # useless pin
+input set_08
+input data_09
+input reset_10
+clock cl_11
+output out_12
+output out_13
+flipflop fl_1
+flipflop fl_2
+
+.links:
+fl_1:1 out_01:1
+fl_1:2 out_02:1
+fl_1:3 cl_03:1
+fl_1:4 reset_04:1
+fl_1:5 data_05:1
+fl_1:6 set_06:1
+fl_2:1 out_13:1
+fl_2:2 out_12:1
+fl_2:3 cl_11:1
+fl_2:4 reset_10:1
+fl_2:5 data_09:1
+fl_2:6 set_08:1

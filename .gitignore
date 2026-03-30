@@ -1,0 +1,11 @@
+*.o
+nanotekspice
+tests_files/
+.vscode/
+TODO
+vgcore.*
+log.bin
+*.gcno
+*.gcda
+*.gcov
+unit_tests

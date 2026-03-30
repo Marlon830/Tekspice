@@ -1,0 +1,39 @@
+.chipsets:
+input in_01
+input in_02
+input in_03
+input in_04
+input in_05
+input in_06
+input in_07
+input in_08 # Useless pin
+input in_09
+output out_10
+output out_11
+output out_12
+output out_13
+output out_14
+input in_15
+full_adder fa_1
+full_adder fa_2
+full_adder fa_3
+full_adder fa_4
+
+.links:
+in_07:1 fa_1:1
+in_06:1 fa_1:2
+in_09:1 fa_1:3
+fa_1:4 out_10:1
+in_05:1 fa_2:1
+in_04:1 fa_2:2
+fa_1:5 fa_2:3
+fa_2:4 out_11:1
+in_03:1 fa_3:1
+in_02:1 fa_3:2
+fa_2:5 fa_3:3
+fa_3:4 out_12:1
+in_01:1 fa_4:1
+in_15:1 fa_4:2
+fa_3:5 fa_4:3
+fa_4:4 out_13:1
+fa_4:5 out_14:1

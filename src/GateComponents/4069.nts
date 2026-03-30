@@ -1,0 +1,34 @@
+.chipsets:
+input in_01
+output out_02
+input in_03
+output out_04
+input in_05
+output out_06
+input in_07 # Useless
+output out_08
+input in_09
+output out_10
+input in_11
+output out_12
+input in_13
+not not_01
+not not_02
+not not_03
+not not_04
+not not_05
+not not_06
+
+.links:
+in_01:1 not_01:1
+out_02:1 not_01:2
+in_03:1 not_02:1
+out_04:1 not_02:2
+in_05:1 not_03:1
+out_06:1 not_03:2
+in_09:1 not_04:1
+out_08:1 not_04:2
+in_11:1 not_05:1
+out_10:1 not_05:2
+in_13:1 not_06:1
+out_12:1 not_06:2
